@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polymer Finder | Smart Polymers</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+<main class="wrap">
+  <div class="top"><div class="brand"><div class="logo">P</div><span>Smart Polymers · Study assistant</span></div>
+    <nav class="main-nav" aria-label="Main menu"><button class="nav-btn active" data-view="finder">Finder</button><button class="nav-btn" data-view="notes">Notes</button><button class="nav-btn" data-view="quiz">Quiz</button><button class="nav-btn" data-view="flashcards">Flashcards</button><button class="nav-btn" data-view="structures">Structures</button><button class="nav-btn" data-view="progress">Progress</button></nav>
+  </div>
+  <div id="finderView" class="view active">
+  <section class="hero">
+
+    <div class="atom-stage" aria-hidden="true">
+      <div class="atom-core"></div>
+      <div class="atom-orbit" style="--tilt:0deg"><span class="electron"></span></div>
+      <div class="atom-orbit" style="--tilt:60deg"><span class="electron"></span></div>
+      <div class="atom-orbit" style="--tilt:-60deg"><span class="electron"></span></div>
+      <div class="atom-orbit" style="--tilt:90deg"><span class="electron"></span></div>
+      <div class="atom-label">Molecular motion · 01</div>
+    </div>
+    <div class="hero-content">
+      <span class="tag">CHEMISTRY • MODULE 3</span>
+      <h1>Discover the<br><em>polymer</em> behind it.</h1>
+      <p>Type a real-world example and uncover the smart material behind it. Get the polymer name and one clear reason, based on your study PDFs.</p>
+      <div class="hero-note"><span></span> Quick identification · Simple explanations</div>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Study tool statistics">
+    <div class="stat"><span class="stat-num" data-count="11">0</span><span class="stat-label">POLYMER ENTRIES</span><span class="stat-sub">Searchable examples</span></div>
+    <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">SOURCE PDFs</span><span class="stat-sub">Your uploaded notes</span></div>
+    <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">POLYMERIZATION ROUTES</span><span class="stat-sub">Addition · Condensation</span></div>
+    <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">SMART-MATERIAL THEMES</span><span class="stat-sub">Conducting · Bio · Shape-memory</span></div>
+  </section>
+  <section class="panel">
+    <label for="example">Enter an example</label>
+    <div class="inputrow">
+      <input id="example" type="text" placeholder="e.g. non-stick coating on a frying pan" autocomplete="off">
+      <button id="identify">Identify polymer ↗</button>
+    </div>
+    <p class="hint">Tip: mention what the material is used for or its important property.</p>
+    <div id="result" class="result" aria-live="polite">
+      <div class="eyebrow" id="status">MATCH FOUND</div>
+      <h2 id="polymer"></h2>
+      <p class="why" id="reason"></p>
+    </div>
+    <div class="examples">
+      <h3>Try an example</h3>
+      <div class="chips">
+        <button class="chip">Non-stick frying pan coating</button>
+        <button class="chip">Bulletproof vest</button>
+        <button class="chip">Biodegradable food packaging</button>
+        <button class="chip">Conducting polymer</button>
+        <button class="chip">Shape-memory material</button>
+        <button class="chip">Polymer made from ethene</button>
+        <button class="chip">Computer keyboard material</button>
+      </div>
+    </div>
+  </section>
+  
+
+ 
+  <footer>Study tool based on your uploaded Smart Polymers notes · Check your class notes for the full explanation.</footer>
+  </div>
+  <section id="notesView" class="view notes-view">
+    <div class="notes-heading"><span class="tag">REVISION MENU · MODULE 3</span><h1>Smart Polymers<br><em>Quick Notes</em></h1><p>Short, point-wise revision notes arranged from your four uploaded PDFs.</p></div>
+    <div class="notes-tools"><input id="noteSearch" type="search" placeholder="Search notes: Kevlar, PLA, doping…" aria-label="Search quick notes"><span id="noteCount">11 topics</span></div><div class="notes-grid">
+      <article class="note-card"><span class="note-number">01</span><h2>Polymer – Basics</h2><ul><li>A polymer is a high-molecular-weight macromolecule formed by repeated joining of small molecules called <b>monomers</b>.</li><li>Monomer → Polymer; <b>n</b> represents the number of repeating units.</li><li>Example: Ethene (CH₂=CH₂) forms polyethylene (polyethene).</li></ul></article>
+      <article class="note-card"><span class="note-number">02</span><h2>Addition Polymerization</h2><ul><li>Also called <b>chain-growth polymerization</b>.</li><li>Unsaturated monomers join together; no small molecule is eliminated.</li><li>Driving force: weak C–C π-bonds convert into stronger C–C σ-bonds.</li><li>Initiators form free radicals, cations or anions that start chain growth.</li><li><b>1,2-addition:</b> π-bond converts to σ-bond while monomer units join.</li><li><b>1,4-addition:</b> monomers with two π-bonds form a new σ-bond and retain a new π-bond; example: butadiene → polybutadiene.</li></ul></article>
+      <article class="note-card"><span class="note-number">03</span><h2>Condensation & Copolymerization</h2><ul><li><b>Condensation polymerization</b> is also called step-growth polymerization.</li><li>Monomers link together with elimination of small molecules such as H₂O, NH₃ or HCl.</li><li>Example: terephthalic acid + ethylene glycol → PET.</li><li><b>Copolymerization:</b> polymerization of two or more different monomer species.</li><li>Example given in the notes: Kevlar.</li></ul></article>
+      <article class="note-card"><span class="note-number">04</span><h2>Kevlar</h2><ul><li>High-performance aramid fibre in the aromatic polyamide family.</li><li>Prepared by condensation polymerization; HCl is the by-product.</li><li>Woven Kevlar fibre is described in the notes as five times stronger than steel.</li><li>High strength comes from inter-chain hydrogen bonding and aromatic stacking interactions.</li><li>Rigid molecules form mostly planar, sheet-like structures.</li><li>Strength decreases at higher temperatures over time.</li></ul></article>
+      <article class="note-card"><span class="note-number">05</span><h2>Conducting Polymers</h2><ul><li>Organic polymers that conduct electricity due to conjugated molecular structure and mobile charge carriers.</li><li><b>Conjugated π-electron polymers:</b> have conjugated double bonds along the backbone.</li><li>Overlapping π-orbitals form valence and conduction bands; examples: polyacetylene and polyaniline.</li><li><b>P-doping:</b> electrons are removed, creating positive holes; oxidation (e.g. FeCl₃).</li><li><b>N-doping:</b> electrons are added, creating negative charges; reduction (e.g. lithium).</li></ul></article>
+      <article class="note-card"><span class="note-number">06</span><h2>Extrinsically Conducting Polymers</h2><ul><li>Normally insulating polymers made conducting by adding conductive materials.</li><li>The polymer does not need a conjugated π-electron backbone.</li><li>Examples: rubber + carbon black; polyethylene + graphite or carbon black.</li><li>Conductive element-filled polymers are low-cost, lightweight and easy to process.</li><li>Applications include computer keyboards.</li><li>Blended conducting polymers are made by physically mixing an insulating polymer with a conducting polymer or component.</li></ul></article>
+      <article class="note-card"><span class="note-number">07</span><h2>Polyaniline (PANI)</h2><ul><li>A conducting polymer with environmental stability; conductivity depends on oxidation state and acid doping.</li><li><b>Chemical method:</b> aniline in dilute HCl is treated with ammonium persulphate; precipitate is filtered, washed and dried.</li><li><b>Electrochemical method:</b> platinum electrodes are placed in acidified aniline solution and 0.7 V is applied; a thin film forms.</li><li>Colour changes can be used in sensors and electrochromic devices.</li><li>Doped PANI is a good conductor; its original form is a semiconductor.</li></ul></article>
+      <article class="note-card"><span class="note-number">08</span><h2>Biodegradable Polymers</h2><ul><li>Break down into natural substances such as water, carbon dioxide and biomass with microorganisms.</li><li>Microorganisms include bacteria, fungi and algae.</li><li>Enzymatic hydrolysis breaks polymers into oligomers, dimers and monomers, then simpler products.</li><li><b>Aerobic:</b> in the presence of oxygen; forms CO₂, water and biomass.</li><li><b>Anaerobic:</b> without oxygen; forms methane, biomass, water and CO₂.</li><li>Applications: packaging, agriculture, medicine, textiles and consumer products.</li></ul></article>
+      <article class="note-card"><span class="note-number">09</span><h2>Polylactic Acid (PLA)</h2><ul><li>Biodegradable thermoplastic polyester commonly produced from lactic acid.</li><li>Renewable sources include corn starch, sugarcane and cassava.</li><li><b>Preparation:</b> starch extraction → glucose → fermentation to lactic acid → polymerization.</li><li>Polymerization methods: direct condensation or ring-opening polymerization of lactide.</li><li>Contains ester (–COO–) linkages that can break by hydrolysis.</li><li>Properties: transparent, glossy, stiff; glass transition 60–65°C and melting point about 150–160°C.</li><li>Uses: packaging, biomedical products, 3D-printing filament, agriculture, textiles and compostable products.</li></ul></article>
+      <article class="note-card"><span class="note-number">10</span><h2>Shape-Memory Polymers (SMPs)</h2><ul><li>Smart polymers that return from a temporary deformed shape to their permanent shape when triggered by an external stimulus.</li><li>Stimuli: temperature, chemicals, light and mechanical force.</li><li><b>Programming:</b> heat above Tm, then deform the polymer into a temporary shape.</li><li><b>Storage:</b> cool while deformed, below Tm, to fix the temporary shape.</li><li><b>Recovery:</b> heat again above Tm without a load; the original shape returns.</li><li>Applications: heat-shrinkable tubes, self-repairing components, sportswear, automobiles, sutures and vascular stents.</li></ul></article>
+      <article class="note-card"><span class="note-number">11</span><h2>PTFE (Polytetrafluoroethylene)</h2><ul><li>Linear polymer with no branching; contains strong and stable C–F bonds.</li><li>Properties: heat resistance, chemical resistance, electrical insulation and low coefficient of friction.</li><li>Fluorine atoms pack tightly around the carbon backbone in a twisted zig-zag arrangement.</li><li>This gives stiffness, high crystalline melting point and thermal stability.</li><li>Melting point stated in the notes: about 327°C.</li><li>Mechanical strength remains nearly unchanged from −100°C to 300°C.</li><li>Cannot be processed by melt extrusion.</li></ul></article>
+    </div>
+    <p class="notes-disclaimer">Revision summary based on the uploaded Smart Polymers PDFs. Note: PDF 4 lists PTFE as an SMP example; in standard polymer science, PTFE is not generally classified as a shape-memory polymer, so confirm the intended example with your teacher. For detailed mechanisms and structures, refer to the original notes.</p>
+  </section>
+
+  <section id="quizView" class="view feature-view">
+    <div class="section-heading"><span class="tag">TEST YOUR KNOWLEDGE</span><h1>Smart Polymers <em>Quiz</em></h1><p>Eight questions based on your four Smart Polymers PDFs. Your best score is saved on this device.</p></div>
+    <div class="feature-card quiz-card">
+      <div class="quiz-meta"><span id="quizCounter">Question 1 of 8</span><span id="quizScore">Score: 0</span></div>
+      <div class="progress-track"><div id="quizProgress" class="progress-value" style="width:12.5%"></div></div>
+      <h2 id="quizQuestion">Loading question…</h2>
+      <div id="quizOptions" class="quiz-options"></div>
+      <p id="quizFeedback" class="feedback" aria-live="polite"></p>
+      <div class="quiz-actions"><button id="quizNext" class="primary-btn" disabled>Next question →</button><button id="quizRestart" class="secondary-btn">Restart</button></div>
+      <div id="quizComplete" class="quiz-complete" hidden></div>
+    </div>
+  </section>
+
+  <section id="flashcardsView" class="view feature-view">
+    <div class="section-heading"><span class="tag">ACTIVE RECALL</span><h1>Study with <em>Flashcards</em></h1><p>Tap the card to reveal the answer, then mark whether you remembered it.</p></div>
+    <div class="flashcard-wrap">
+      <div class="flash-meta"><span id="flashCounter">Card 1 of 12</span><span id="flashKnown">Known: 0 · Review: 0</span></div>
+      <button id="flashcard" class="flashcard" aria-label="Reveal flashcard answer"><span class="flash-label" id="flashLabel">QUESTION</span><span id="flashText">What is a polymer?</span><span class="flash-tap">Tap to flip ↻</span></button>
+      <div class="flash-actions"><button id="markKnown" class="primary-btn">✓ I knew it</button><button id="markReview" class="secondary-btn">↻ Review again</button></div>
+      <div class="flash-controls"><button id="flashPrev" class="text-btn">← Previous</button><button id="flashShuffle" class="text-btn">Shuffle deck</button><button id="flashNext" class="text-btn">Next →</button></div>
+    </div>
+  </section>
+
+  <section id="structuresView" class="view feature-view">
+    <div class="section-heading"><span class="tag">VISUAL CHEMISTRY</span><h1>Polymer <em>Structures</em></h1><p>Simplified repeating-unit diagrams for revision. These are schematic, not full stereochemical or reaction-mechanism drawings.</p></div>
+    <div class="structure-grid">
+      <article class="structure-card"><div class="structure-art"><svg viewBox="0 0 340 110" role="img" aria-label="Polyethylene repeating unit"><path d="M34 56 H92 L130 32 L174 56 L218 32 L260 56 H306"/><text x="170" y="92">n</text></svg></div><h2>Polyethylene (PE)</h2><div class="formula">[–CH₂–CH₂–]ₙ</div><p>Ethene undergoes addition polymerization as its C=C double bond opens.</p><span class="structure-tag">Addition polymer</span></article>
+      <article class="structure-card"><div class="structure-art"><svg viewBox="0 0 340 110" role="img" aria-label="PTFE repeating unit"><path d="M34 56 H92 L130 32 L174 56 L218 32 L260 56 H306"/><text x="170" y="92">n</text><text x="84" y="22">F</text><text x="258" y="22">F</text><text x="84" y="84">F</text><text x="258" y="84">F</text></svg></div><h2>PTFE</h2><div class="formula">[–CF₂–CF₂–]ₙ</div><p>Strong C–F bonds contribute to chemical resistance, heat resistance and low friction.</p><span class="structure-tag">Fluoropolymer</span></article>
+      <article class="structure-card"><div class="structure-art"><svg viewBox="0 0 340 110" role="img" aria-label="PLA repeating unit"><path d="M30 56 H82 L118 34 H162 L198 56 H244 L280 34 H310"/><text x="170" y="92">n</text><text x="111" y="23">O</text><text x="232" y="23">O</text></svg></div><h2>Polylactic acid (PLA)</h2><div class="formula">[–O–CH(CH₃)–CO–]ₙ</div><p>Contains ester linkages that can undergo hydrolysis under suitable conditions.</p><span class="structure-tag">Biodegradable polyester</span></article>
+      <article class="structure-card"><div class="structure-art"><svg viewBox="0 0 340 110" role="img" aria-label="PET repeating unit schematic"><path d="M24 56 H64 L82 30 L112 30 L130 56 L160 56 L178 30 L208 30 L226 56 H316"/><text x="170" y="92">n</text><text x="98" y="20">O</text><text x="216" y="20">O</text></svg></div><h2>Polyethylene terephthalate (PET)</h2><div class="formula">[–O–CH₂–CH₂–O–CO–C₆H₄–CO–]ₙ</div><p>Produced by condensation of terephthalic acid and ethylene glycol.</p><span class="structure-tag">Condensation polymer</span></article>
+      <article class="structure-card"><div class="structure-art"><svg viewBox="0 0 340 110" role="img" aria-label="Kevlar aromatic polyamide schematic"><path d="M28 56 H82 L108 32 L134 56 L160 32 L186 56 H232 L258 32 L284 56 H312"/><text x="170" y="92">n</text></svg></div><h2>Kevlar</h2><div class="formula">Aromatic polyamide · –CO–NH– linkages</div><p>Rigid aromatic chains and inter-chain hydrogen bonding support high strength.</p><span class="structure-tag">Aramid fibre</span></article>
+      <article class="structure-card"><div class="structure-art"><svg viewBox="0 0 340 110" role="img" aria-label="Conjugated polymer backbone schematic"><path d="M30 56 L66 28 L102 56 L138 28 L174 56 L210 28 L246 56 L282 28 L310 56"/><path class="double-bond" d="M58 37 L94 65 M130 37 L166 65 M202 37 L238 65 M274 37 L300 58"/></svg></div><h2>Conjugated polymer</h2><div class="formula">Alternating single and double bonds</div><p>Delocalized π-electrons along the backbone support charge transport after doping.</p><span class="structure-tag">Conducting polymer concept</span></article>
+    </div>
+    <p class="notes-disclaimer">Schematic learning illustrations; consult the original PDFs for detailed structural formulae and preparation reactions.</p>
+  </section>
+
+  <section id="progressView" class="view feature-view">
+    <div class="section-heading"><span class="tag">YOUR STUDY DASHBOARD</span><h1>Learning <em>Progress</em></h1><p>Quiz scores and flashcard recall marks are stored locally in this browser.</p></div>
+    <div class="progress-grid">
+      <article class="progress-stat"><span class="progress-icon">✦</span><strong id="bestScore">—</strong><span>Best quiz score</span></article>
+      <article class="progress-stat"><span class="progress-icon">▣</span><strong id="quizzesDone">0</strong><span>Quizzes completed</span></article>
+      <article class="progress-stat"><span class="progress-icon">✓</span><strong id="cardsKnown">0</strong><span>Cards marked known</span></article>
+      <article class="progress-stat"><span class="progress-icon">↻</span><strong id="cardsReview">0</strong><span>Cards to review</span></article>
+    </div>
+    <div class="feature-card progress-detail"><div class="detail-heading"><h2>Study activity</h2><button id="resetProgress" class="text-btn danger-text">Reset progress</button></div><p id="progressMessage">Complete a quiz or review flashcards to start tracking your learning.</p><div class="progress-track"><div id="overallProgress" class="progress-value" style="width:0%"></div></div><small>Flashcard recall rate</small></div>
+  </section>
+
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const navButtons = [...document.querySelectorAll('.nav-btn')];
+navButtons.forEach(btn=>btn.addEventListener('click',()=>{
+  navButtons.forEach(b=>b.classList.toggle('active',b===btn));
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+  $(btn.dataset.view+'View').classList.add('active');
+  if(btn.dataset.view==='progress') renderProgress();
+  window.scrollTo({top:0,behavior:'smooth'});
+}));
+
+const rules = [
+ {name:"PTFE (Polytetrafluoroethylene)",reason:"PTFE is used because its strong C–F bonds give it high heat and chemical resistance and a very low coefficient of friction.",keys:["non stick","non-stick","frying pan","cookware coating","teflon","low friction","chemical resistant coating"]},
+ {name:"Kevlar",reason:"Kevlar is used because strong inter-chain hydrogen bonding and aromatic stacking give it very high strength.",keys:["bulletproof","bullet proof","body armour","body armor","protective vest","five times stronger","high strength fibre","high-strength fiber"]},
+ {name:"PLA (Polylactic acid)",reason:"PLA is used because it is a biodegradable thermoplastic that can be made from renewable resources such as corn or sugarcane.",keys:["biodegradable food packaging","compostable packaging","food container","food containers","biodegradable plastic","3d printing","3d printer","plant pot","mulch film","sugarcane plastic","corn starch plastic"]},
+ {name:"Polyethylene (Polyethene)",reason:"Polyethylene is formed by addition polymerization of ethene, in which the carbon–carbon double bond opens to form a polymer chain.",keys:["ethene","ethylene","plastic bag","polyethylene","polyethene","polythene"]},
+ {name:"Polybutadiene",reason:"Polybutadiene is formed by 1,4-addition polymerization of butadiene, which leaves a double bond in the polymer chain.",keys:["butadiene","polybutadiene"]},
+ {name:"Polyethylene terephthalate (PET)",reason:"PET is formed by condensation polymerization of terephthalic acid and ethylene glycol with elimination of a small molecule.",keys:["pet bottle","water bottle","polyester bottle","terephthalic acid","ethylene glycol","polyethylene terephthalate"]},
+ {name:"Polyaniline (PANI)",reason:"Polyaniline is a conducting polymer whose conductivity can be changed by its oxidation state and acid doping.",keys:["polyaniline","pani","aniline","conducting polymer","conductive polymer","printed circuit board"]},
+ {name:"Polyacetylene",reason:"Polyacetylene conducts through its conjugated π-electron backbone, which allows charge carriers to move along the polymer.",keys:["polyacetylene","conjugated double bonds","conjugated pi","conjugated π"]},
+ {name:"Extrinsically conducting polymer",reason:"It conducts because an insulating polymer is combined with a conducting material such as carbon black or graphite.",keys:["computer keyboard","carbon black","graphite filled","graphite-filled","rubber with carbon","conductive filler"]},
+ {name:"Shape-memory polymer (SMP)",reason:"It returns from a temporary deformed shape to its permanent shape when triggered by an external stimulus such as heat.",keys:["shape memory","shape-memory","returns to original shape","temporary shape","self tightening suture","vascular stent","heat shrinkable tube","heat-shrinkable tube"]},
+ {name:"Biodegradable polymer",reason:"It can be broken down by microorganisms into simpler natural substances such as water, carbon dioxide, and biomass.",keys:["biodegradable","microorganisms","compostable material","biodegradation"]}
+];
+function identify(){
+ const input=$('example').value.trim().toLowerCase(),box=$('result');
+ if(!input){$('example').focus();return;}
+ const match=rules.find(r=>r.keys.some(k=>input.includes(k)));
+ box.classList.add('show');box.classList.remove('notfound');
+ if(match){$('status').textContent='MATCH FOUND IN YOUR NOTES';$('polymer').textContent=match.name;$('reason').textContent=match.reason;}
+ else{box.classList.add('notfound');$('status').textContent='NO CONFIDENT MATCH';$('polymer').textContent='Not identified from these PDFs';$('reason').textContent='This example is not clearly covered by the uploaded Smart Polymers notes, so I cannot identify its polymer reliably.';}
+}
+$('identify').addEventListener('click',identify);
+$('example').addEventListener('keydown',e=>{if(e.key==='Enter')identify();});
+document.querySelectorAll('.chip').forEach(chip=>chip.addEventListener('click',()=>{$('example').value=chip.textContent;identify();}));
+
+// Searchable notes menu
+const noteCards=[...document.querySelectorAll('.note-card')];
+$('noteSearch').addEventListener('input',()=>{
+ const q=$('noteSearch').value.trim().toLowerCase();let count=0;
+ noteCards.forEach(card=>{const show=card.textContent.toLowerCase().includes(q);card.hidden=!show;if(show)count++;});
+ $('noteCount').textContent=`${count} topic${count===1?'':'s'}`;
+});
+
+// Local progress store (browser only)
+const STORE='polymerFinderPremiumProgressV1';
+function getProgress(){try{return JSON.parse(localStorage.getItem(STORE))||{best:0,quizzes:0,known:[],review:[]};}catch(e){return {best:0,quizzes:0,known:[],review:[]};}}
+function saveProgress(data){localStorage.setItem(STORE,JSON.stringify(data));}
+function renderProgress(){const p=getProgress();$('bestScore').textContent=p.quizzes?`${p.best}/8`:'—';$('quizzesDone').textContent=p.quizzes;$('cardsKnown').textContent=p.known.length;$('cardsReview').textContent=p.review.length;const total=flashcards.length,rate=total?Math.round(p.known.length/total*100):0;$('overallProgress').style.width=Math.min(rate,100)+'%';$('progressMessage').textContent=p.quizzes||p.known.length||p.review.length?`You've completed ${p.quizzes} quiz attempt(s) and marked ${p.known.length} flashcard(s) as known.`:'Complete a quiz or review flashcards to start tracking your learning.';}
+
+// Quiz: source-based questions
+const questions=[
+ {q:'What is the small molecule that repeatedly joins to form a polymer called?',o:['Monomer','Catalyst','Plasticizer','Initiator'],a:0,e:'A monomer is the small molecule that joins repeatedly to form a polymer.'},
+ {q:'Which polymerization route eliminates small molecules such as water or HCl?',o:['Addition polymerization','Condensation polymerization','Free-radical initiation','Doping'],a:1,e:'Condensation polymerization links monomers while eliminating small molecules such as H₂O, NH₃ or HCl.'},
+ {q:'Which two starting materials are used to prepare PE0T?',o:['Ethene and butadiene','Aniline and HCl','Terephthalic acid and ethylene glycol','Lactic acid and glucose'],a:2,e:'The notes identify terephthalic acid and ethylene glycol as the monomers for PET.'},
+ {q:'What contributes strongly to Kevlar’s high strength?',o:['Low friction alone','Inter-chain hydrogen bonding and aromatic stacking','Fluorine packing','Ester hydrolysis'],a:1,e:'The notes describe inter-chain hydrogen bonding and aromatic stacking interactions.'},
+ {q:'In P-doping of a conducting polymer, what happens?',o:['Electrons are added','The polymer is hydrolysed','Electrons are removed, creating positive holes','Carbon black is mixed in'],a:2,e:'P-doping removes electrons and creates positive holes; the notes give FeCl₃ as an oxidizing example.'},
+ {q:'Which microorganism group is listed as participating in polymer biodegradation?',o:['Bacteria, fungi and algae','Only viruses','Only insects','Only mammals'],a:0,e:'The biodegradable-polymer notes list bacteria, fungi and algae.'},
+ {q:'Which linkage in PLA can be broken by hydrolysis?',o:['C–F','Ester (–COO–)','Only C=C','Metallic bond'],a:1,e:'PLA contains ester linkages in its backbone, which can be broken by hydrolysis.'},
+ {q:'During the shape-memory cycle, when is the temporary shape fixed?',o:['While heating above Tm under load','After cooling below Tm while deformed','Only after dissolving the polymer','Before the polymer is deformed'],a:1,e:'The notes describe cooling the deformed sample below Tm to fix the temporary shape.'}
+];
+let qi=0,score=0,answered=false;
+function renderQuestion(){const q=questions[qi];answered=false;$('quizCounter').textContent=`Question ${qi+1} of ${questions.length}`;$('quizScore').textContent=`Score: ${score}`;$('quizProgress').style.width=((qi+1)/questions.length*100)+'%';$('quizQuestion').textContent=q.q;$('quizFeedback').textContent='';$('quizFeedback').className='feedback';$('quizNext').disabled=true;$('quizNext').textContent=qi===questions.length-1?'See results →':'Next question →';$('quizComplete').hidden=true;$('quizOptions').innerHTML='';q.o.forEach((option,i)=>{const b=document.createElement('button');b.className='quiz-option';b.textContent=option;b.addEventListener('click',()=>answerQuestion(i));$('quizOptions').appendChild(b);});}
+function answerQuestion(index){if(answered)return;answered=true;const q=questions[qi];const buttons=[...document.querySelectorAll('.quiz-option')];buttons.forEach((b,i)=>{b.disabled=true;if(i===q.a)b.classList.add('correct');else if(i===index)b.classList.add('wrong');});if(index===q.a)score++;$('quizScore').textContent=`Score: ${score}`;$('quizFeedback').textContent=(index===q.a?'Correct. ':'Not quite. ')+q.e;$('quizFeedback').classList.add(index===q.a?'good':'bad');$('quizNext').disabled=false;}
+$('quizNext').addEventListener('click',()=>{if(!answered)return;if(qi<questions.length-1){qi++;renderQuestion();}else{const p=getProgress();p.quizzes++;p.best=Math.max(p.best,score);saveProgress(p);$('quizOptions').innerHTML='';$('quizQuestion').textContent='Quiz completed!';$('quizFeedback').textContent=`You scored ${score} out of ${questions.length}. ${score>=6?'Great work — keep revising.':'Review the Quick Notes and try again.'}`;$('quizNext').disabled=true;$('quizComplete').hidden=false;$('quizComplete').textContent=`Final score: ${score}/${questions.length} · Best score: ${p.best}/${questions.length}`;renderProgress();}});
+$('quizRestart').addEventListener('click',()=>{qi=0;score=0;renderQuestion();});renderQuestion();
+
+// Flashcards
+const flashcards=[
+ ['What is a polymer?','A high-molecular-weight macromolecule made from repeating monomers.'],
+ ['What does n represent in a polymer formula?','The number of repeating units.'],
+ ['What is addition polymerization?','Chain-growth joining of unsaturated monomers without eliminating a small molecule.'],
+ ['What is 1,4-addition?','Monomers with two π-bonds form a chain bond and retain a new π-bond.'],
+ ['What is condensation polymerization?','Step-growth linking of monomers with elimination of small molecules.'],
+ ['Which monomers form PET?','Terephthalic acid and ethylene glycol.'],
+ ['What gives Kevlar high strength?','Inter-chain hydrogen bonding and aromatic stacking interactions.'],
+ ['What is P-doping?','Removing electrons from a conducting polymer to create positive holes.'],
+ ['What is N-doping?','Adding electrons to a conducting polymer to create negative charges.'],
+ ['What is the key feature of PLA?','A biodegradable thermoplastic polyester with hydrolysable ester linkages.'],
+ ['Name the three shape-memory cycle stages.','Programming, storage and recovery.'],
+ ['Name two key PTFE properties.','High heat and chemical resistance; electrical insulation and low friction.']
+];
+let flashOrder=flashcards.map((_,i)=>i),fi=0,flipped=false;
+function renderFlash(){const p=getProgress();$('flashCounter').textContent=`Card ${fi+1} of ${flashOrder.length}`;$('flashKnown').textContent=`Known: ${p.known.length} · Review: ${p.review.length}`;$('flashLabel').textContent=flipped?'ANSWER':'QUESTION';$('flashText').textContent=flashcards[flashOrder[fi]][flipped?1:0];$('flashcard').classList.toggle('flipped',flipped);}
+function markFlash(type){const id=String(flashOrder[fi]),p=getProgress();p.known=p.known.filter(x=>x!==id);p.review=p.review.filter(x=>x!==id);p[type].push(id);saveProgress(p);if(fi<flashOrder.length-1)fi++;flipped=false;renderFlash();}
+$('flashcard').addEventListener('click',()=>{flipped=!flipped;renderFlash();});$('markKnown').addEventListener('click',()=>markFlash('known'));$('markReview').addEventListener('click',()=>markFlash('review'));$('flashPrev').addEventListener('click',()=>{fi=(fi-1+flashOrder.length)%flashOrder.length;flipped=false;renderFlash();});$('flashNext').addEventListener('click',()=>{fi=(fi+1)%flashOrder.length;flipped=false;renderFlash();});$('flashShuffle').addEventListener('click',()=>{for(let i=flashOrder.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[flashOrder[i],flashOrder[j]]=[flashOrder[j],flashOrder[i]];}fi=0;flipped=false;renderFlash();});renderFlash();
+$('resetProgress').addEventListener('click',()=>{if(confirm('Reset all quiz and flashcard progress on this device?')){saveProgress({best:0,quizzes:0,known:[],review:[]});renderProgress();renderFlash();}});
+// Animate original dashboard counters
+ document.querySelectorAll('.stat-num[data-count]').forEach(el=>{const target=Number(el.dataset.count),start=performance.now(),duration=850;function tick(now){const t=Math.min((now-start)/duration,1);el.textContent=Math.round(target*(1-Math.pow(1-t,3)));if(t<1)requestAnimationFrame(tick);}requestAnimationFrame(tick);});
+</script>
+<footer>&copy;2026 Emil Jo Praveesh</footer>
+</body>
+</html>
